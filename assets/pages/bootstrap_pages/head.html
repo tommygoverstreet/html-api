@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+ <head>
+  <meta charset="UTF-8" />
+  <title>Bootstrap 5.0.1 Cheatsheet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./library/css/bs501.css" />
+  <style>
+   *, *::before, *::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+
+   .flex-row, .flex-col {
+     display: flex;
+   }
+
+   .flex-row {
+     flex-direction: row;
+   }
+
+   .flex-col {
+     flex-direction: column;
+   }
+
+   .j-center {
+     justify-content: center;
+   }
+
+   .a-center {
+     align-items: center;
+   }
+
+   .j-between {
+     justify-content: space-between;
+   }
+
+   .j-around {
+     justify-content: space-around;
+   }
+
+   .j-evenly {
+     justify-content: space-evenly;
+   }
+  </style>
+ </head>
+
+ <body onload="">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+   <div class="container-fluid">
+     <a class="navbar-brand" href="#">${companyName}</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarToggler">
+       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <li class="nav-item">
+           <a class="nav-link active" aria-current="page" href="#">Home</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#">Link</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+         </li>
+       </ul>
+       <form class="d-flex">
+         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+         <button class="btn btn-outline-success" type="submit">Search</button>
+       </form>
+     </div>
+   </div>
+ </nav>
+ <div class="container-fluid mt-5 pt-5">
+ <header class="py-5 h-75">
+   <!-- Jumbotron -->
+   <div class="jumbotron jumbotron-fluid">
+     <div class="container">
+       <h1 class="display-2">${introHeading}</h1>
+       <p class="lead">${introLead}</p>
+     </div>
+ </header>
+<main>
+ <!-- ABOUT -->
+ <section id="about">
+
+ </section>
+<!-- SERVICES -->
+ <section id="services">
+
+ </section>
+<!-- CONTACT -->
+ <section id="contact">
+
+ </section>
+ </main>
+<!-- FOOTER -->
+ <footer>
+   <div class="container">
+     <div class="row">
+       <div class="col-12 col">
+       <p class="text-center copyright">${copyright}</p>
+     </div>
+ </footer>
+</div>
+ <script src="/library/js/popper292.js"></script>
+ <script src="/library/js/bs501.js"></script>
+ </body>
+</html>

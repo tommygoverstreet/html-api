@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+ <head>
+  <meta charset="UTF-8" />
+  <title>Bootstrap 5.0.1 Cheatsheet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./library/css/bs501.css" />
+
+     <!-- Favicons -->
+<link rel="apple-touch-icon" href="#" sizes="180x180">
+<link rel="icon" href="#" sizes="32x32" type="image/png">
+<link rel="icon" href="#" sizes="16x16" type="image/png">
+<link rel="manifest" href="/favicons.json">
+<link rel="icon" href="#">
+  <style>
+   *, *::before, *::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+
+   .flex-row, .flex-col {
+     display: flex;
+   }
+
+   .flex-row {
+     flex-direction: row;
+   }
+
+   .flex-col {
+     flex-direction: column;
+   }
+
+   .j-center {
+     justify-content: center;
+   }
+
+   .a-center {
+     align-items: center;
+   }
+
+   .j-between {
+     justify-content: space-between;
+   }
+
+   .j-around {
+     justify-content: space-around;
+   }
+
+   .j-evenly {
+     justify-content: space-evenly;
+   }
+
+   .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+  </style>
+ </head>
+
+ <body onload="">
+  <nav
+  class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark px-2"
+  aria-label="Main navigation"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/index.html">${companyName}</a>
+    <button
+      class="navbar-toggler p-0 border-0"
+      type="button"
+      id="navbarSideCollapse"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div
+      class="navbar-collapse offcanvas-collapse bg-dark"
+      id="offscreenNavbar"
+    >
+    <div class="container">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"
+            >Dashboard</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Notifications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Switch account</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="dropdown01"
+            data-toggle="dropdown"
+            aria-expanded="false"
+            >Settings</a
+          >
+          <ul class="dropdown-menu" aria-labelledby="dropdown01">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+   
+      <form class="d-flex">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" type="submit">
+          Search
+        </button>
+      </form>
+     </div>
+    </div>
+  </div>
+</nav>
+
+ <div class="nav-scroller bg-body shadow-sm">
+  <nav class="nav nav-underline" aria-label="Secondary navigation">
+    <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+    <a class="nav-link" href="#">
+      Friends
+      <span class="badge bg-light text-dark rounded-pill align-text-bottom">27</span>
+    </a>
+    <a class="nav-link" href="#">Explore</a>
+    <a class="nav-link" href="#">Suggestions</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Link</a>
+  </nav>
+</div>
+
+
+
+ <div class="container-fluid mt-5 pt-5">
+ <header class="py-5 h-75">
+   <!-- Jumbotron -->
+   <div class="jumbotron jumbotron-fluid">
+     <div class="container">
+       <h1 class="display-2">Heading 1</h1>
+       <p class="lead">{class lead}</p>
+     </div>
+ </header>
+<main>
+ <section>
+  <!-- TYPEOGRAPHY -->
+  <article>
+   <div class="article-header">
+    <p class="h1">Typeography</p>
+   </div>
+ <h1>Heading 1</h1>
+ <h2>Heading 2</h2>
+ <h3>Heading 3</h3>
+ <h4>Heading 4</h4>
+ <h5>Heading 5</h5>
+ <h6>Heading 6</h6>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum placeat, eum ullam cumque ipsam labore autem molestias veniam accusamus doloribus provident rerum dicta voluptates praesentium nesciunt! Placeat eos fugit porro.</p>
+</div>
+</article>
+<!-- BUTTONS -->
+<article>
+ <div class="article-header">
+   <p class="h1">Buttons</p>
+ </div>
+ <button type="button" class="btn btn-primary">Primary</button>
+ <button type="button" class="btn btn-secondary">Secondary</button>
+ <button type="button" class="btn btn-success">Success</button>
+ <button type="button" class="btn btn-danger">Danger</button>
+ <button type="button" class="btn btn-warning">Warning</button>
+ <button type="button" class="btn btn-info">Info</button>
+ <button type="button" class="btn btn-light">Light</button>
+ <button type="button" class="btn btn-dark">Dark</button>
+ <button type="button" class="btn btn-link">Link</button>
+</article>
+<!-- LISTS -->
+<article class="mt-5">
+ <div class="container my-4">
+  <div class="article-header">
+   <p class="h1">Unordered Lists</p>
+ </div>
+ <ul class="list-group">
+   <li class="list-item">Item 1</li>
+   <li class="list-item">Item 2</li>
+   <li class="list-item">Item 3</li>
+ </ul>
+</div>
+ <div class="container my-4">
+ <p class="h2">Ordered List</p>
+ <ol class="list-group">
+   <li class="list-item">Item 1</li>
+   <li class="list-item">Item 2</li>
+   <li class="list-item">Item 3</li>
+ </ol>
+</div>
+</article>
+<!-- Tables -->
+<article class="mt-5 p-3">
+ <div class="container-fluid my-4">
+  <div class="article-header">
+   <p class="h1">Tables</p>
+ </div>
+ <p class="h3">Striped Table</p>
+ <table class="table table-striped">
+   <thead>
+     <tr>
+       <th scope="col">#</th>
+       <th scope="col">First</th>
+       <th scope="col">Last</th>
+       <th scope="col">Handle</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <th scope="row">1</th>
+       <td>Mark</td>
+       <td>Otto</td>
+       <td>@mdo</td>
+     </tr>
+     <tr>
+       <th scope="row">2</th>
+       <td>Jacob</td>
+       <td>Thornton</td>
+       <td>@fat</td>
+     </tr>
+     <tr>
+       <th scope="row">3</th>
+       <td>Larry</td>
+       <td>the Bird</td>
+       <td>@twitter</td>
+     </tr>
+   </tbody>
+ </table>
+</div>
+<!-- Dark Table-->
+<div class="container-fluid my-4">
+ <p class="h3">Dark Table</p>
+ <table class="table table-dark table-striped">
+   <thead>
+     <tr>
+       <th scope="col">#</th>
+       <th scope="col">First</th>
+       <th scope="col">Last</th>
+       <th scope="col">Handle</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <th scope="row">1</th>
+       <td>Mark</td>
+       <td>Otto</td>
+       <td>@mdo</td>
+     </tr>
+     <tr>
+       <th scope="row">2</th>
+       <td>Jacob</td>
+       <td>Thornton</td>
+       <td>@fat</td>
+     </tr>
+     <tr>
+       <th scope="row">3</th>
+       <td>Larry</td>
+       <td>the Bird</td>
+       <td>@twitter</td>
+     </tr>
+   </tbody>
+ </table>
+</div>
+<!-- Full Width Responsive Table-->
+<div class="container-fluid my-4">
+ <p class="h3">Responsive Table</p>
+ <table class="table table-responsive">
+   <thead>
+     <tr>
+       <th scope="col">#</th>
+       <th scope="col">First</th>
+       <th scope="col">Last</th>
+       <th scope="col">Handle</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <th scope="row">1</th>
+       <td>Mark</td>
+       <td>Otto</td>
+       <td>@mdo</td>
+     </tr>
+     <tr>
+       <th scope="row">2</th>
+       <td>Jacob</td>
+       <td>Thornton</td>
+       <td>@fat</td>
+     </tr>
+     <tr>
+       <th scope="row">3</th>
+       <td>Larry</td>
+       <td>the Bird</td>
+       <td>@twitter</td>
+     </tr>
+   </tbody>
+ </table>
+</div>
+</article>
+</section>
+
+<section id="forms" class="container">
+ <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Forms</h2>
+
+ <article class="my-3 bg-dark text-light p-3" id="overview">
+   <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+     <h3>Overview</h3>
+     <a class="d-flex a-center" href="/docs/5.0/forms/overview/">Documentation</a>
+   </div>
+
+   <div>
+     <div class="bd-example">
+     <form>
+       <div class="mb-3">
+         <label for="exampleInputEmail1" class="form-label">Email address</label>
+         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+       </div>
+       <div class="mb-3">
+         <label for="exampleInputPassword1" class="form-label">Password</label>
+         <input type="password" class="form-control" id="exampleInputPassword1">
+       </div>
+       <div class="mb-3 form-check">
+         <input type="checkbox" class="form-check-input" id="exampleCheck1">
+         <label class="form-check-label" for="exampleCheck1">Check me out</label>
+       </div>
+       <fieldset class="mb-3">
+         <legend>Radios buttons</legend>
+         <div class="form-check">
+           <input type="radio" name="radios" class="form-check-input" id="exampleRadio1">
+           <label class="form-check-label" for="exampleRadio1">Default radio</label>
+         </div>
+         <div class="mb-3 form-check">
+           <input type="radio" name="radios" class="form-check-input" id="exampleRadio2">
+           <label class="form-check-label" for="exampleRadio2">Another radio</label>
+         </div>
+       </fieldset>
+       <div class="mb-3">
+         <label class="form-label" for="customFile">Upload</label>
+         <input type="file" class="form-control" id="customFile">
+       </div>
+       <div class="mb-3 form-check form-switch">
+         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="">
+         <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+       </div>
+       <div class="mb-3">
+         <label for="customRange3" class="form-label">Example range</label>
+         <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+       </div>
+       <button type="submit" class="btn btn-primary">Submit</button>
+     </form>
+     </div>
+   </div>
+ </article>
+ <hr>
+ <article class="my-3 bg-dark text-light p-3" id="disabled-forms">
+   <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+     <h3>Disabled forms</h3>
+     <a class="d-flex a-center" href="/docs/5.0/forms/overview/#disabled-forms">Documentation</a>
+   </div>
+
+   <div>
+     <div class="bd-example">
+     <form>
+       <fieldset disabled="" aria-label="Disabled fieldset example">
+         <div class="mb-3">
+           <label for="disabledTextInput" class="form-label">Disabled input</label>
+           <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+         </div>
+         <div class="mb-3">
+           <label for="disabledSelect" class="form-label">Disabled select menu</label>
+           <select id="disabledSelect" class="form-select">
+             <option>Disabled select</option>
+           </select>
+         </div>
+         <div class="mb-3">
+           <div class="form-check">
+             <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled="">
+             <label class="form-check-label" for="disabledFieldsetCheck">
+               Can't check this
+             </label>
+           </div>
+         </div>
+         <fieldset class="mb-3">
+           <legend>Disabled radios buttons</legend>
+           <div class="form-check">
+             <input type="radio" name="radios" class="form-check-input" id="disabledRadio1" disabled="">
+             <label class="form-check-label" for="disabledRadio1">Disabled radio</label>
+           </div>
+           <div class="mb-3 form-check">
+             <input type="radio" name="radios" class="form-check-input" id="disabledRadio2" disabled="">
+             <label class="form-check-label" for="disabledRadio2">Another radio</label>
+           </div>
+         </fieldset>
+         <div class="mb-3">
+           <label class="form-label" for="disabledCustomFile">Upload</label>
+           <input type="file" class="form-control" id="disabledCustomFile" disabled="">
+         </div>
+         <div class="mb-3 form-check form-switch">
+           <input class="form-check-input" type="checkbox" id="disabledSwitchCheckChecked" checked="" disabled="">
+           <label class="form-check-label" for="disabledSwitchCheckChecked">Disabled checked switch checkbox input</label>
+         </div>
+         <div class="mb-3">
+           <label for="disabledRange" class="form-label">Disabled range</label>
+           <input type="range" class="form-range" min="0" max="5" step="0.5" id="disabledRange">
+         </div>
+         <button type="submit" class="btn btn-primary">Submit</button>
+       </fieldset>
+     </form>
+     </div>
+   </div>
+ </article>
+ <hr>
+ <article class="my-3 bg-dark text-light p-3" id="sizing">
+   <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+     <h3>Sizing</h3>
+     <a class="d-flex a-center" href="/docs/5.0/forms/form-control/#sizing">Documentation</a>
+   </div>
+
+   <div>
+     <div class="bd-example">
+     <div class="mb-3">
+       <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+     </div>
+     <div class="mb-3">
+       <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+         <option selected="">Open this select menu</option>
+         <option value="1">One</option>
+         <option value="2">Two</option>
+         <option value="3">Three</option>
+       </select>
+     </div>
+     <div class="mb-3">
+       <input type="file" class="form-control form-control-lg" aria-label="Large file input example">
+     </div>
+     </div>
+
+     <div class="bd-example">
+     <div class="mb-3">
+       <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+     </div>
+     <div class="mb-3">
+       <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+         <option selected="">Open this select menu</option>
+         <option value="1">One</option>
+         <option value="2">Two</option>
+         <option value="3">Three</option>
+       </select>
+     </div>
+     <div class="mb-3">
+       <input type="file" class="form-control form-control-sm" aria-label="Small file input example">
+     </div>
+     </div>
+   </div>
+ </article>
+ <hr>
+ <article class="my-3 bg-dark text-light p-3" id="input-group">
+   <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+     <h3>Input group</h3>
+     <a class="d-flex a-center" href="/docs/5.0/forms/input-group/">Documentation</a>
+   </div>
+
+   <div>
+     <div class="bd-example">
+     <div class="input-group mb-3">
+       <span class="input-group-text" id="basic-addon1">@</span>
+       <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+     </div>
+     <div class="input-group mb-3">
+       <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+       <span class="input-group-text" id="basic-addon2">@example.com</span>
+     </div>
+     <label for="basic-url" class="form-label">Your vanity URL</label>
+     <div class="input-group mb-3">
+       <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+       <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+     </div>
+     <div class="input-group mb-3">
+       <span class="input-group-text">$</span>
+       <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+       <span class="input-group-text">.00</span>
+     </div>
+     <div class="input-group">
+       <span class="input-group-text">With textarea</span>
+       <textarea class="form-control" aria-label="With textarea"></textarea>
+     </div>
+     </div>
+   </div>
+ </article>
+ <hr>
+ <article class="my-3 bg-dark text-light p-3" id="floating-labels">
+   <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+     <h3>Floating labels</h3>
+     <a class="d-flex a-center" href="/docs/5.0/forms/floating-labels/">Documentation</a>
+   </div>
+
+   <div>
+     <div class="bd-example">
+     <form>
+       <div class="form-floating mb-3">
+         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+         <label for="floatingInput">Email address</label>
+       </div>
+       <div class="form-floating">
+         <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+         <label for="floatingPassword">Password</label>
+       </div>
+     </form>
+     </div>
+   </div>
+ </article>
+ <hr>
+ <article class="my-3 bg-dark text-light p-3" id="validation">
+   <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+     <h3>Validation</h3>
+     <a class="d-flex a-center" href="/docs/5.0/forms/validation/">Documentation</a>
+   </div>
+
+   <div>
+     <div class="bd-example">
+     <form class="row g-3">
+       <div class="col-md-4">
+         <label for="validationServer01" class="form-label">First name</label>
+         <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required="">
+         <div class="valid-feedback">
+           Looks good!
+         </div>
+       </div>
+       <div class="col-md-4">
+         <label for="validationServer02" class="form-label">Last name</label>
+         <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required="">
+         <div class="valid-feedback">
+           Looks good!
+         </div>
+       </div>
+       <div class="col-md-4">
+         <label for="validationServerUsername" class="form-label">Username</label>
+         <div class="input-group has-validation">
+           <span class="input-group-text" id="inputGroupPrepend3">@</span>
+           <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3" required="">
+           <div class="invalid-feedback">
+             Please choose a username.
+           </div>
+         </div>
+       </div>
+       <div class="col-md-6">
+         <label for="validationServer03" class="form-label">City</label>
+         <input type="text" class="form-control is-invalid" id="validationServer03" required="">
+         <div class="invalid-feedback">
+           Please provide a valid city.
+         </div>
+       </div>
+       <div class="col-md-3">
+         <label for="validationServer04" class="form-label">State</label>
+         <select class="form-select is-invalid" id="validationServer04" required="">
+           <option selected="" disabled="" value="">Choose...</option>
+           <option>...</option>
+         </select>
+         <div class="invalid-feedback">
+           Please select a valid state.
+         </div>
+       </div>
+       <div class="col-md-3">
+         <label for="validationServer05" class="form-label">Zip</label>
+         <input type="text" class="form-control is-invalid" id="validationServer05" required="">
+         <div class="invalid-feedback">
+           Please provide a valid zip.
+         </div>
+       </div>
+       <div class="col-12">
+         <div class="form-check">
+           <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required="">
+           <label class="form-check-label" for="invalidCheck3">
+             Agree to terms and conditions
+           </label>
+           <div class="invalid-feedback">
+             You must agree before submitting.
+           </div>
+         </div>
+       </div>
+       <div class="col-12">
+         <button class="btn btn-primary" type="submit">Submit form</button>
+       </div>
+     </form>
+     </div>
+   </div>
+ </article>
+ <hr>
+</section>
+
+<section class="container mt-5">
+ <!-- SIGN IN FORM -->
+ <article>
+  <div class="container">
+<p class="h2">Templates</p>
+<div class="form-signin my-5">
+ <div class="container">
+ <form class="bg-dark text-light p-3">
+   <img class="my-5" src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+   <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+   <div class="text-dark form-floating m-2">
+     <input type="email" class=" form-control" id="floatingInput" placeholder="name@example.com">
+     <label for="floatingInput" class="text-dark">Email address</label>
+   </div>
+   <div class="form-floating m-2">
+     <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+     <label for="floatingPassword" class="text-dark">Password</label>
+   </div>
+
+   <div class="checkbox mb-3">
+     <label>
+       <input type="checkbox" value="remember-me"> Remember me
+     </label>
+   </div>
+   <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+   <p class="mt-5 mb-3 text-muted text-center">${copyright}</p>
+ </form>
+</div>
+</div>
+</div>
+</article>
+</section>
+</main>
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+   <p class="copyright">&copy; ${currentYear} ${companyName}</p>
+ </footer>
+
+<!-------------
+-----JavaScript-------------
+---------------->
+   <!-- Script -->
+   <script src="/library/js/popper292.js"></script>
+   <script src="/library/js/bs501.js"></script>
+   <script src="/library/js/offCanvas.js"></script>
+   <script src="/library/js/main.js"></script>
+   <script src="/assets/js/app.js"></script>
+ </body>
+
+</html>
